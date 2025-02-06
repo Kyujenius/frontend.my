@@ -1,7 +1,7 @@
 import Image, { type ImageProps } from "next/image";
-import { Button } from "@ui/index";
+import { Button } from "@ui/Button";
 import styles from "./page.module.css";
-
+import { client, n2m } from "@notion/api";
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
   srcDark: string;
@@ -9,7 +9,6 @@ type Props = Omit<ImageProps, "src"> & {
 
 const ThemeImage = (props: Props) => {
   const { srcLight, srcDark, ...rest } = props;
-
   return (
     <>
       <Image {...rest} src={srcLight} className="imgLight" />
@@ -19,6 +18,7 @@ const ThemeImage = (props: Props) => {
 };
 
 export default function Home() {
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
