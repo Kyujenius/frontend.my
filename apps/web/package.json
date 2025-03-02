@@ -11,8 +11,10 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
     "@repo/ui": "workspace:*",
     "next": "^15.1.6",
+    "notion-to-md": "^3.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

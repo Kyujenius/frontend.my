@@ -8,7 +8,9 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["../../packages/ui/src/components/*"]
+      "@ui/*": ["../../packages/ui/src/components/*"],
+      "@notion/*": ["../../packages/notion/src/*"],
+      "@/*": ["*"]
     }
   },
   "include": [
@@ -17,7 +19,8 @@
     "@repo/ui/components/**/*",
     "next-env.d.ts",
     "next.config.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "declarations.d.ts"
   ],
   "exclude": ["node_modules"]
 }
