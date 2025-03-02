@@ -17,7 +17,16 @@
     "node": ">=18"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@notionhq/client": "^2.2.15",
     "@tanstack/react-query": "^5.66.0",
-    "@tanstack/react-query-devtools": "^5.66.0"
-  }
+    "@tanstack/react-query-devtools": "^5.66.0",
+    "framer-motion": "^12.4.4",
+    "matter-js": "^0.20.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }
